@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[Medicine]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] VARCHAR(50) NOT NULL, 
+    [Doctor] VARCHAR(50) NOT NULL, 
+    [PillSize] VARCHAR(50) NOT NULL, 
+    [Cost] DECIMAL NOT NULL
+)

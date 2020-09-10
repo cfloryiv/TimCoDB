@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>TimsDinerDB</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{f1efa6d4-c984-45d1-ad73-0bea15c53cde}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>TimsDinerDB</RootNamespace>
+    <AssemblyName>TimsDinerDB</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Tables" />
+    <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="Scripts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Food.sql" />
+    <Build Include="dbo\Tables\Order.sql" />
+    <Build Include="dbo\Stored Procedures\spFood_All.sql" />
+    <Build Include="dbo\Stored Procedures\spOrders_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spOrders_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spOrders_UpdateName.sql" />
+    <Build Include="dbo\Stored Procedures\spOrders_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spBooks_All.sql" />
+    <Build Include="dbo\Tables\Book.sql" />
+    <Build Include="dbo\Tables\Course.sql" />
+    <Build Include="dbo\Tables\Doctor.sql" />
+    <Build Include="dbo\Tables\MedicalVisit.sql" />
+    <Build Include="dbo\Tables\Medicine.sql" />
+    <Build Include="dbo\Tables\Refill.sql" />
+    <Build Include="dbo\Stored Procedures\spBooks_insert.sql" />
+    <Build Include="dbo\Stored Procedures\spCourses_All.sql" />
+    <Build Include="dbo\Stored Procedures\spCourses_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spDoctors_All.sql" />
+    <Build Include="dbo\Stored Procedures\spDoctors_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicalVisits_All.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicalVisits_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicines_All.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicines_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spRefills_All.sql" />
+    <Build Include="dbo\Stored Procedures\spRefills_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spTrackings_All.sql" />
+    <Build Include="dbo\Stored Procedures\spTrackings_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spBooks_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spCourses_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spDoctors_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicalVisits_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicines_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spRefills_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spTrackings_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spBooks_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spCourses_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spDoctors_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicalVisits_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicines_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spRefills_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spTrackings_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spBooks_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spCourses_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicalVisits_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spMedicines_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spRefills_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spTrackings_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spDoctors_Update.sql" />
+    <Build Include="dbo\Tables\Ledger.sql" />
+    <Build Include="dbo\Tables\Account.sql" />
+    <Build Include="dbo\Stored Procedures\spAccounts_All.sql" />
+    <Build Include="dbo\Stored Procedures\spAccounts_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spAccounts_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spAccounts_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spAccounts_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgers_All.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgers_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgers_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgers_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgers_Update.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgers_Delete_Year.sql" />
+    <Build Include="dbo\Tables\Sugar.sql" />
+    <Build Include="dbo\Stored Procedures\spSugars_All.sql" />
+    <Build Include="dbo\Stored Procedures\spSugars_Delete.sql" />
+    <Build Include="dbo\Stored Procedures\spSugars_GetById.sql" />
+    <Build Include="dbo\Stored Procedures\spSugars_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spSugars_Update.sql" />
+    <Build Include="dbo\Tables\Tracking.sql" />
+    <Build Include="dbo\Stored Procedures\spLedgersByYear.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\Script.PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TimsDinerDB.refactorlog" />
+  </ItemGroup>
+</Project>

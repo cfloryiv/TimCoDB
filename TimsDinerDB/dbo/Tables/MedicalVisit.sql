@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[MedicalVisit]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Date] DATETIME2 NOT NULL, 
+    [Doctor] VARCHAR(50) NOT NULL, 
+    [Notes] VARCHAR(MAX) NOT NULL, 
+    [Type] VARCHAR(50) NOT NULL, 
+    [PersonID] INT NOT NULL
+)

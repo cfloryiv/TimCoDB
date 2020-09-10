@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TimsDinerDB", "TimsDinerDB\TimsDinerDB.sqlproj", "{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLibrary", "DataLibrary\DataLibrary.csproj", "{6DCDAC57-B7A2-4E48-AE95-ABBE6458C7AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1EFA6D4-C984-45D1-AD73-0BEA15C53CDE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6DCDAC57-B7A2-4E48-AE95-ABBE6458C7AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCDAC57-B7A2-4E48-AE95-ABBE6458C7AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCDAC57-B7A2-4E48-AE95-ABBE6458C7AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCDAC57-B7A2-4E48-AE95-ABBE6458C7AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85754D2E-53F8-4396-9407-BFF01CD7E5F4}
+	EndGlobalSection
+EndGlobal
